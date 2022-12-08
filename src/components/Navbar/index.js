@@ -15,7 +15,7 @@ function Navbar() {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <div className="relative w-full lg:max-w-sm">
-                <select className="w-1/2 p-2.5 text-white bg-transparent rounded-md outline-none">
+                <select className="w-1/2 p-2.5 text-white bg-transparent rounded-md outline-none ">
                   <option>SERVICE</option>
                   <option>Laravel 9 with React</option>
                   <option>React with Tailwind CSS</option>
