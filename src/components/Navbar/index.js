@@ -1,84 +1,98 @@
-import React from "react";
-// import { ReactComponent as Search } from "../../../public/search.svg";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Navbar() {
+function Navbar() {
+  const [navbar, setNavbar] = useState(false);
+
   return (
     <>
-      <div>
-        <nav className="navbar navbar-expand-lg bg-dark">
-          <div className="container-fluid">
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-
-            <div
-              className="collapse navbar-collapse"
-              id="navbarSupportedContent"
-            >
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item"></li>
-                <li className="nav-item"></li>
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                    </li>
-                    <li>
-                      <hr className="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <a className="navbar-brand" href="#">
-                  Navbar
-                </a>
-              </ul>
-
-              <img src="/search.svg" alt="" />
-              {/* <Search /> */}
-              {/* <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form> */}
+      <nav className="w-full bg-[#393E46]  ">
+        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+          <div>
+            <div className="flex items-center justify-between py-3 md:py-5 md:block">
+              <div className="relative w-full lg:max-w-sm">
+                <select className="w-1/2 p-2.5 text-white bg-transparent rounded-md outline-none">
+                  <option>SERVICE</option>
+                  <option>Laravel 9 with React</option>
+                  <option>React with Tailwind CSS</option>
+                  <option>React With Headless UI</option>
+                </select>
+              </div>
+              <div className="md:hidden">
+                <button
+                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                  onClick={() => setNavbar(!navbar)}>
+                  {navbar ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 "
+                      viewBox="0 0 20 20"
+                      fill="currentColor">
+                      <path
+                        fillRule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 "
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}>
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4 6h16M4 12h16M4 18h16"
+                      />
+                    </svg>
+                  )}
+                </button>
+              </div>
             </div>
           </div>
-        </nav>
-      </div>
+          <div>
+            <div
+              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+                navbar ? 'block' : 'hidden'
+              }`}>
+              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                <li className="hover:text-blue-500">
+                  <a href="/">Home</a>
+                </li>
+                <li className="hover:text-blue-500">
+                  <a href="#services">Services</a>
+                </li>
+                <li className="hover:text-blue-500">
+                  <a href="#review">Review</a>
+                </li>
+                <li className="hover:text-blue-500">
+                  <a href="#about-us">About Us</a>
+                </li>
+              </ul>
+
+              <div className="mt-3 space-y-2 lg:hidden md:inline-block">
+                <Link
+                  to={'/sign-in'}
+                  className="w-full inline-block px-6 py-2 border-2 border-black font-medium text-xs leading-normal uppercase rounded hover:bg-blue-400 hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                  Sign in
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="hidden space-x-2 md:inline-block">
+            <Link
+              to="/sign-in"
+              className="px-8 py-3 outline outline-1 hover:bg-blue-400 rounded-md">
+              Sign in
+            </Link>
+          </div>
+        </div>
+      </nav>
     </>
   );
 }
+
+export default Navbar;
