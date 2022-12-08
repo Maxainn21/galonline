@@ -81,10 +81,12 @@ function Navbar() {
               </div>
             </div>
           </div>
-          <div className="flex space-x-2 md:inline-block ">
-            <Search />
-            <Profile />
-            <Cart />
+          <div className="hidden space-x-2 md:inline-block ">
+            <div className="flex space-x-2">
+              <Search />
+              <Profile />
+              <Cart />
+            </div>
           </div>
         </div>
       </nav>
