@@ -17,9 +17,9 @@ function Navbar() {
               <div className="relative w-full lg:max-w-sm">
                 <select className="w-1/2 p-2.5 text-white bg-transparent rounded-md outline-none ">
                   <option>SERVICE</option>
-                  <option>Laravel 9 with React</option>
-                  <option>React with Tailwind CSS</option>
-                  <option>React With Headless UI</option>
+                  <option className="text-black">Isi Ulang</option>
+                  <option className="text-black">Beli Galon</option>
+                  <option></option>
                 </select>
               </div>
               <div className="md:hidden">
