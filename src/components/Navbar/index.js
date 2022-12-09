@@ -10,7 +10,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="w-full bg-[#393E46]  ">
+      <nav className="w-full bg-[#393E46]  fixed top-0 ">
         <div className="justify-between px-4 mx-auto md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block max">
@@ -70,21 +70,22 @@ function Navbar() {
                 <img src="" alt="" />
               </ul>
 
-              <div className="mt-3 space-y-2 lg:hidden md:inline-block">
-                <Link
-                  to={"/sign-in"}
-                  className="w-full inline-block px-6 py-2 border-2 border-black font-medium text-xs leading-normal uppercase rounded hover:bg-blue-400 hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
-                >
-                  Sign in
-                </Link>
-              </div>
+              <div className="mt-3 space-y-2 lg:hidden md:inline-block"></div>
             </div>
           </div>
           <div className="hidden space-x-2 md:inline-block ">
             <div className="flex space-x-2">
-              <Search />
-              <Profile />
-              <Cart />
+              <Link>
+                <Search />
+              </Link>
+
+              <Link>
+                <Profile />
+              </Link>
+
+              <Link>
+                <Cart />
+              </Link>
             </div>
           </div>
         </div>
