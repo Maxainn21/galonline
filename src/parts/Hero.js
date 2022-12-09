@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <div className="container mx-auto">
-      <div className="flex mt-32 pt-12 pb-16 lg:pb-20 -mx-8 sm:px-8 px-8 lg:flex-row flex-col">
+      <div className="flex mt-32 pt-12 pb-16 lg:pb-20 mx-auto sm:px-8 px-8 lg:flex-row flex-col">
         <div className="lg:flex-grow lg:w-1/2 flex flex-col lg:items-start lg:text-left mb-3 md:mb-12 lg:mb-0 items-center">
           <h1 className=" title-font sm:text-[32px] lg:text-[32px] text-4xl mb-8 font-bold sm:leading-tight">
             Nikmati kemudahan membeli <br /> ataupun mengisi ulang kembali galon
