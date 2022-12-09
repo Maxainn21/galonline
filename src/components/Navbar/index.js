@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ReactComponent as Galonline } from '../../assets/Galonline.svg';
+import { ReactComponent as Search } from '../../assets/search.svg';
+import { ReactComponent as Profile } from '../../assets/profile.svg';
+import { ReactComponent as Cart } from '../../assets/cart.svg';
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -7,11 +11,11 @@ function Navbar() {
   return (
     <>
       <nav className="w-full bg-[#393E46]  ">
-        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <div className="justify-between px-4 mx-auto md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block max">
               <div className="relative w-full lg:max-w-sm">
-                <select className="w-1/2 p-2.5 text-white bg-transparent rounded-md outline-none">
+                <select className="w-1/2 p-2.5 text-white bg-transparent rounded-md outline-none ">
                   <option>SERVICE</option>
                   <option>Laravel 9 with React</option>
                   <option>React with Tailwind CSS</option>
@@ -58,19 +62,9 @@ function Navbar() {
               className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
                 navbar ? 'block' : 'hidden'
               }`}>
-              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                <li className="hover:text-blue-500">
-                  <a href="/">Home</a>
-                </li>
-                <li className="hover:text-blue-500">
-                  <a href="#services">Services</a>
-                </li>
-                <li className="hover:text-blue-500">
-                  <a href="#review">Review</a>
-                </li>
-                <li className="hover:text-blue-500">
-                  <a href="#about-us">About Us</a>
-                </li>
+              <ul className="items-center justify-center space-y-8 mt-8 md:flex md:space-x-24 md:space-y-0">
+                <Galonline />
+                <img src="" alt="" />
               </ul>
 
               <div className="mt-3 space-y-2 lg:hidden md:inline-block">
@@ -82,12 +76,12 @@ function Navbar() {
               </div>
             </div>
           </div>
-          <div className="hidden space-x-2 md:inline-block">
-            <Link
-              to="/sign-in"
-              className="px-8 py-3 outline outline-1 hover:bg-blue-400 rounded-md">
-              Sign in
-            </Link>
+          <div className="hidden space-x-2 md:inline-block ">
+            <div className="flex space-x-2">
+              <Search />
+              <Profile />
+              <Cart />
+            </div>
           </div>
         </div>
       </nav>
