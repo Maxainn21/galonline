@@ -70,14 +70,14 @@ function Navbar() {
                 <img src="" alt="" />
               </ul>
 
-              <div className="mt-3 space-y-2 lg:hidden md:inline-block">
+              {/* <div className="mt-3 space-y-2 lg:hidden md:inline-block">
                 <Link
                   to={"/sign-in"}
                   className="w-full inline-block px-6 py-2 border-2 border-black font-medium text-xs leading-normal uppercase rounded hover:bg-blue-400 hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
                 >
                   Sign in
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="hidden space-x-2 md:inline-block ">
