@@ -9,7 +9,7 @@ function Navbar() {
       <nav className="w-full bg-[#393E46]  ">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block">
+            <div className="flex items-center justify-between py-3 md:py-5 md:block max">
               <div className="relative w-full lg:max-w-sm">
                 <select className="w-1/2 p-2.5 text-white bg-transparent rounded-md outline-none">
                   <option>SERVICE</option>
@@ -20,7 +20,7 @@ function Navbar() {
               </div>
               <div className="md:hidden">
                 <button
-                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                  className="p-2 text-white rounded-md outline-none focus:border-gray-400 focus:border"
                   onClick={() => setNavbar(!navbar)}>
                   {navbar ? (
                     <svg
