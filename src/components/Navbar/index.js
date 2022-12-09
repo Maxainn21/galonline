@@ -15,11 +15,10 @@ function Navbar() {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block max">
               <div className="relative w-full lg:max-w-sm">
-                <select className="w-1/2 p-2.5 text-white bg-transparent rounded-md outline-none ">
+                <select className="w-full p-2.5 text-white bg-transparent rounded-md outline-none ">
                   <option>SERVICE</option>
-                  <option className="text-black">Isi Ulang</option>
-                  <option className="text-black">Beli Galon</option>
-                  <option></option>
+                  <option>Isi Ulang</option>
+                  <option>Beli Galon</option>
                 </select>
               </div>
               <div className="md:hidden">
