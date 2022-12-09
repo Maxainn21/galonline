@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
-    <>
+    <div className="">
       <div className="flex mt-20 pt-12 pb-16 lg:pb-20 -mx-8 sm:px-8 px-8 lg:flex-row flex-col">
         <div className="lg:flex-grow lg:w-1/2 flex flex-col lg:items-start lg:text-left mb-3 md:mb-12 lg:mb-0 items-center">
           <h1 className="mx-5 title-font sm:text-[32px] lg:text-[32px] text-4xl mb-8 font-bold sm:leading-tight">
@@ -31,9 +31,9 @@ export default function Hero() {
           </div>
         </div>
         <div className="w-full md:w-1/2 text-center justify-center flex -mx-5 ">
-          <img id="hero" src="/hisyamduduk.png" alt="" />
+          <img id="hero" src="/hisyamduduk.jpg" alt="" />
         </div>
       </div>
-    </>
+    </div>
   );
 }
