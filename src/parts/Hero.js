@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -20,17 +20,19 @@ export default function Hero() {
           <div className="inline-block items-center mt-5 lg:mx-0 lg:flex justify-center lg:space-x-8 md:space-x-2 sm:space-x-3 space-x-0">
             <Link
               className="bg-[#393E46] no-underline inline-flex font-semibold text-white text-base py-3 px-4 rounded-md mb-4 lg:mb-0 md:mb-0 focus:outline-none hover:shadow-lg"
-              to={'/sign-in'}>
+              to={"/sign-in"}
+            >
               Log In
             </Link>
             <Link
               className="text-[#00ADB5] inline-flex font-semibold text-base py-3 px-4 rounded-md mb-4 lg:mb-0 md:mb-0"
-              to={'/sign-up'}>
+              to={"/sign-up"}
+            >
               Sign Up
             </Link>
           </div>
         </div>
-        <div className="w-full md:w-1/2 text-center justify-center flex pr-0">
+        <div className="w-full md:w-1/2  text-center justify-center flex pr-0">
           <img id="hero" src="/hisyamduduk.png" alt="" />
         </div>
       </div>
