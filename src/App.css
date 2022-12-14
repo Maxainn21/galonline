@@ -1,5 +1,74 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* $bg: rgba(0, 0, 0, 0.2); */
+
+.bg,
+.overlay {
+  text-align: center;
+}
+
+img,
+.overlay {
+  transition: 0.3s all;
+  border-radius: 3px;
+}
+
+.bg {
+  float: left;
+  max-width: 31%;
+  position: relative;
+  margin: 0.5%;
+}
+
+.bg img {
+  width: 100%;
+  margin-bottom: -4px;
+}
+
+.bg .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  opacity: 0;
+}
+
+.bg .overlay h2 {
+  padding-top: 20%;
+  font-family: 'Droid Serif', serif;
+}
+
+.bg .overlay p {
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.bg .overlay:hover {
+  opacity: 1;
+}
+
+.bg img:hover {
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+}
+
+@media screen and (max-width: 1148px) {
+  .bg {
+    max-width: 48%;
+    margin: 1%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bg {
+    float: none;
+    max-width: 80%;
+    margin: 1% auto;
+  }
 }
