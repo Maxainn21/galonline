@@ -93,56 +93,6 @@ export default function Footer() {
         <div className="container mx-auto flex  pt-12 flex-col lg:flex-row items-center space-y-5 lg:space-y-0">
           <div className="flex title-font font-medium items-center cursor-pointer text-gray-900 mb-4 lg:mb-0 md:mb-0 space-x-5">
             <svg
-              className="social-media-c"
-              width="30"
-              height="30"
-              viewBox="0 0 30 30"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <circle cx="15" cy="15" r="15" fill="#C7C7C7" />
-              <g clip-path="url(#clip0)">
-                <path
-                  d="M17.6648 9.65667H19.1254V7.11267C18.8734 7.078 18.0068 7 16.9974 7C14.8914 7 13.4488 8.32467 13.4488 10.7593V13H11.1248V15.844H13.4488V23H16.2981V15.8447H18.5281L18.8821 13.0007H16.2974V11.0413C16.2981 10.2193 16.5194 9.65667 17.6648 9.65667V9.65667Z"
-                  fill="white"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0">
-                  <rect
-                    width="16"
-                    height="16"
-                    fill="white"
-                    transform="translate(7 7)"
-                  />
-                </clipPath>
-              </defs>
-            </svg>
-            <svg
-              className="social-media-c"
-              width="30"
-              height="30"
-              viewBox="0 0 30 30"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <circle cx="15" cy="15" r="15" fill="#C7C7C7" />
-              <g clip-path="url(#clip0)">
-                <path
-                  d="M23 10.039C22.405 10.3 21.771 10.473 21.11 10.557C21.79 10.151 22.309 9.513 22.553 8.744C21.919 9.122 21.219 9.389 20.473 9.538C19.871 8.897 19.013 8.5 18.077 8.5C16.261 8.5 14.799 9.974 14.799 11.781C14.799 12.041 14.821 12.291 14.875 12.529C12.148 12.396 9.735 11.089 8.114 9.098C7.831 9.589 7.665 10.151 7.665 10.756C7.665 11.892 8.25 12.899 9.122 13.482C8.595 13.472 8.078 13.319 7.64 13.078C7.64 13.088 7.64 13.101 7.64 13.114C7.64 14.708 8.777 16.032 10.268 16.337C10.001 16.41 9.71 16.445 9.408 16.445C9.198 16.445 8.986 16.433 8.787 16.389C9.212 17.688 10.418 18.643 11.852 18.674C10.736 19.547 9.319 20.073 7.785 20.073C7.516 20.073 7.258 20.061 7 20.028C8.453 20.965 10.175 21.5 12.032 21.5C18.068 21.5 21.368 16.5 21.368 12.166C21.368 12.021 21.363 11.881 21.356 11.742C22.007 11.28 22.554 10.703 23 10.039Z"
-                  fill="white"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0">
-                  <rect
-                    width="16"
-                    height="16"
-                    fill="white"
-                    transform="translate(7 7)"
-                  />
-                </clipPath>
-              </defs>
-            </svg>
-            <svg
               className="social-media-p"
               width="30"
               height="30"
@@ -188,6 +138,7 @@ export default function Footer() {
               </defs>
             </svg>
           </div>
+
           <nav className="mx-auto flex flex-wrap items-center text-base justify-center space-x-5">
             <a href="" className="footer-link">
               Terms of Service
