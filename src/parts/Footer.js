@@ -1,7 +1,7 @@
-import React from 'react';
-import { ReactComponent as FacebookCircled } from '../assets/FacebookCircled.svg';
-import { ReactComponent as InstagramCircle } from '../assets/InstagramCircle.svg';
-import { ReactComponent as TwitterCircled } from '../assets/TwitterCircled.svg';
+import React from "react";
+import { ReactComponent as FacebookCircled } from "../assets/FacebookCircled.svg";
+import { ReactComponent as InstagramCircle } from "../assets/InstagramCircle.svg";
+import { ReactComponent as TwitterCircled } from "../assets/TwitterCircled.svg";
 
 export default function Footer() {
   return (
@@ -17,9 +17,11 @@ export default function Footer() {
             <nav className="list-none list-footer space-y-5">
               <li>
                 <p>
-                  Galonline adalah situs beli galon <br /> atau <br /> isi ulang
-                  galon secara online disertai yang dengan pengiriman produk dan
-                  pemasangan
+                  Galonline adalah situs beli <br />
+                  galon atau isi ulang galon
+                  <br /> secara online disertai yang <br />
+                  dengan pengiriman produk <br />
+                  dan pemasangan
                 </p>
               </li>
             </nav>
@@ -57,7 +59,7 @@ export default function Footer() {
 
           <div className="">
             <h2 className="title-font font-semibold text-2xl mb-5">
-              Ikuti Kami
+              IKUTI KAMI
             </h2>
             <nav className="flex items-center list-none list-footer">
               <FacebookCircled />
@@ -68,7 +70,7 @@ export default function Footer() {
 
           <div className="">
             <h2 className="title-font font-semibold text-2xl mb-5">
-              Tetap Terupdate
+              TETAP TERUPDATE
             </h2>
             <nav className="list-none list-footer space-y-5">
               <p>
@@ -98,7 +100,8 @@ export default function Footer() {
               height="30"
               viewBox="0 0 30 30"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <circle cx="15" cy="15" r="15" fill="#C7C7C7" />
               <g clip-path="url(#clip0)">
                 <path
@@ -123,7 +126,8 @@ export default function Footer() {
               height="30"
               viewBox="0 0 30 30"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <circle cx="15" cy="15" r="15" fill="#C7C7C7" />
               <g clip-path="url(#clip0)">
                 <path
@@ -148,7 +152,8 @@ export default function Footer() {
               height="30"
               viewBox="0 0 30 30"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 d="M17.8711 15C17.8711 16.5857 16.5857 17.8711 15 17.8711C13.4143 17.8711 12.1289 16.5857 12.1289 15C12.1289 13.4143 13.4143 12.1289 15 12.1289C16.5857 12.1289 17.8711 13.4143 17.8711 15Z"
                 fill="#C7C7C7"
@@ -168,7 +173,8 @@ export default function Footer() {
               height="30"
               viewBox="0 0 30 30"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <circle cx="15" cy="15" r="15" fill="#C7C7C7" />
               <g clip-path="url(#clip0)">
                 <path
