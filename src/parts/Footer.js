@@ -194,6 +194,7 @@ export default function Footer() {
               </defs>
             </svg>
           </div>
+
           <nav className="mx-auto flex flex-wrap items-center text-base justify-center space-x-5">
             <a href="" className="footer-link">
               Terms of Service
