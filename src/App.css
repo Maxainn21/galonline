@@ -3,3 +3,48 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
+.content-2-2 .btn-outline {
+  border: 1px solid #979797;
+  color: #979797;
+}
+
+.content-2-2 .btn-outline:hover {
+  border: 1px solid #27c499;
+  color: #27c499;
+}
+
+.content-2-2 .btn-fill {
+  background-color: #27c499;
+  border: 1px solid #27c499;
+}
+
+.content-2-2 .card-header {
+  background-color: #eef6f4;
+  border: 1px solid #27c499;
+}
+
+.content-2-2 .text-medium-black {
+  color: #121212;
+}
+
+.content-2-2 .text-gray {
+  color: #565656;
+}
+
+.footer-2-1 .list-footer li a {
+  color: #c7c7c7;
+}
+.footer-2-1 .list-footer li a:hover {
+  color: #555252;
+}
+.footer-2-1 .border-color {
+  color: #c7c7c7;
+}
+.footer-2-1 .footer-link:hover {
+  color: #555252;
+}
+.footer-2-1 .social-media-c:hover circle,
+.footer-2-1 .social-media-p:hover path {
+  fill: #555252;
+}
