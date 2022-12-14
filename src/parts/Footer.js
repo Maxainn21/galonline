@@ -1,10 +1,13 @@
-import React from "react";
+import React from 'react';
+import { ReactComponent as FacebookCircled } from '../assets/FacebookCircled.svg';
+import { ReactComponent as InstagramCircle } from '../assets/InstagramCircle.svg';
+import { ReactComponent as TwitterCircled } from '../assets/TwitterCircled.svg';
 
 export default function Footer() {
   return (
-    <footer className="py-4 mx-auto px-4 mt-28 footer-2-1 bg-[#EEEEEE]">
+    <footer className="container-fluid py-4 mx-auto px-4 mt-28 footer-2-1 bg-[#EEEEEE] max-md:w-full">
       <div className="lg:pb-24 pb-16 mx-auto">
-        <div className="grid lg:grid-cols-6 sm:grid-cols-2 lg:gap-0 gap-y-6">
+        <div className="grid lg:grid-cols-5 sm:grid-cols-2 lg:gap-0 gap-y-6">
           <div className="">
             <div className="mb-5">
               <h2 className="title-font font-semibold text-2xl mb-5">
@@ -52,57 +55,33 @@ export default function Footer() {
             </nav>
           </div>
 
-          <div className="flex max-md:flex-col ">
-            <div className="lg:mx-10">
-              <h2 className="title-font font-semibold text-2xl mb-5">
-                Support
-              </h2>
-              <nav className="list-none list-footer space-y-5">
-                <li>
-                  <a href="">Getting Started</a>
-                </li>
-                <li>
-                  <a href="">Help Center</a>
-                </li>
-                <li>
-                  <a href="">Server Status</a>
-                </li>
-              </nav>
-            </div>
+          <div className="">
+            <h2 className="title-font font-semibold text-2xl mb-5">
+              Ikuti Kami
+            </h2>
+            <nav className="flex items-center list-none list-footer">
+              <FacebookCircled />
+              <InstagramCircle />
+              <TwitterCircled />
+            </nav>
+          </div>
 
-            <div className="mx-20">
-              <h2 className="title-font font-semibold text-sm mb-5">
-                Tetap Terupdate
-              </h2>
-              <nav className="list-none list-footer space-y-5">
-                <li>
-                  <a href="">Getting Started</a>
-                </li>
-                <li>
-                  <a href="">Help Center</a>
-                </li>
-                <li>
-                  <a href="">Server Status</a>
-                </li>
-              </nav>
-            </div>
-
-            <div className="lg:mx-10">
-              <h2 className="title-font font-semibold text-2xl mb-5">
-                Support
-              </h2>
-              <nav className="list-none list-footer space-y-5">
-                <li>
-                  <a href="">Getting Started</a>
-                </li>
-                <li>
-                  <a href="">Help Center</a>
-                </li>
-                <li>
-                  <a href="">Server Status</a>
-                </li>
-              </nav>
-            </div>
+          <div className="">
+            <h2 className="title-font font-semibold text-2xl mb-5">
+              Tetap Terupdate
+            </h2>
+            <nav className="list-none list-footer space-y-5">
+              <p>
+                Jadilah yang pertama tahu tentang penawaran khusus dan produk
+                terbaru
+              </p>
+              <input
+                type="text"
+                placeholder="Alamat Email"
+                className="w-full h-14 rounded-md bg-gray-300 outline focus:outline-none"
+              />
+              <button className="bg-black text-white w-1/2 h-14">Daftar</button>
+            </nav>
           </div>
         </div>
       </div>
@@ -119,8 +98,7 @@ export default function Footer() {
               height="30"
               viewBox="0 0 30 30"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <circle cx="15" cy="15" r="15" fill="#C7C7C7" />
               <g clip-path="url(#clip0)">
                 <path
@@ -145,8 +123,7 @@ export default function Footer() {
               height="30"
               viewBox="0 0 30 30"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <circle cx="15" cy="15" r="15" fill="#C7C7C7" />
               <g clip-path="url(#clip0)">
                 <path
@@ -171,8 +148,7 @@ export default function Footer() {
               height="30"
               viewBox="0 0 30 30"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M17.8711 15C17.8711 16.5857 16.5857 17.8711 15 17.8711C13.4143 17.8711 12.1289 16.5857 12.1289 15C12.1289 13.4143 13.4143 12.1289 15 12.1289C16.5857 12.1289 17.8711 13.4143 17.8711 15Z"
                 fill="#C7C7C7"
@@ -192,8 +168,7 @@ export default function Footer() {
               height="30"
               viewBox="0 0 30 30"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <circle cx="15" cy="15" r="15" fill="#C7C7C7" />
               <g clip-path="url(#clip0)">
                 <path
