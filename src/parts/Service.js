@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Service() {
   return (
-    <div>
+    <>
       <div class="container">
         <div class="bg">
           <img src="https://unsplash.it/400/200" alt="" />
@@ -14,6 +14,6 @@ export default function Service() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
