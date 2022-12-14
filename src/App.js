@@ -3,7 +3,6 @@ import Home from './pages/Home';
 import Login from './parts/Logform';
 
 import './App.css';
-// import './App.scss';
 
 function App() {
   return (
