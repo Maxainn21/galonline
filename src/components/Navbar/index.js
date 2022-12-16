@@ -75,7 +75,7 @@ function Navbar() {
           </div>
           <div className="hidden space-x-2 md:inline-block ">
             <div className="flex space-x-2">
-              <Link>
+              <Link to={"/search"}>
                 <Search />
               </Link>
 

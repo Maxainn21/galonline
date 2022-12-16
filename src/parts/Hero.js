@@ -24,9 +24,10 @@ export default function Hero() {
             >
               Log In
             </Link>
+
             <Link
               className="text-[#00ADB5] inline-flex font-semibold text-base py-3 px-4 rounded-md mb-4 lg:mb-0 md:mb-0"
-              to={"/sign-up"}
+              to={"/register"}
             >
               Sign Up
             </Link>
