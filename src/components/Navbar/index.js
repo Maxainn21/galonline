@@ -79,7 +79,7 @@ function Navbar() {
                 <Search />
               </Link>
 
-              <Link>
+              <Link to={"/profile"}>
                 <Profile />
               </Link>
 
