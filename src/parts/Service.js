@@ -6,11 +6,15 @@ export default function Service() {
       id: 1,
       image: "/galon1.png",
       title: "Beli Galon",
+      location: "/home",
+      buttonName: "Beli Galon",
     },
     {
       id: 2,
       image: "/galon2.png",
       title: "Isi Ulang Galon",
+      location: "/isiulang",
+      buttonName: "Isi Ulang Galon",
     },
   ];
   return (
@@ -36,8 +40,13 @@ export default function Service() {
                   alt=""
                 />
               </picture>
-
-              <h1 className="mt-4 mb-2 text-xl font-bold">{item.title}</h1>
+              <br />
+              <a
+                href={item.location}
+                className=" bg-[#00ADB5] hover:bg-[#222831] font-bold py-2 px-4 rounded text-white no-underline "
+              >
+                {item.buttonName}
+              </a>
             </div>
           );
         })}
