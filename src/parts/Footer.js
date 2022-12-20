@@ -27,7 +27,7 @@ export default function Footer() {
                   Ada pertanyaan?
                 </p>
                 <li>
-                  <a href="">support@galonline.com</a>
+                  <a href="/">support@galonline.com</a>
                 </li>
               </li>
             </nav>
@@ -37,10 +37,10 @@ export default function Footer() {
             <h2 className="title-font font-semibold text-2xl mb-5">LAYANAN</h2>
             <nav className="list-none list-footer space-y-5">
               <li>
-                <a href="">Isi Ulang Galon</a>
+                <a href="/">Isi Ulang Galon</a>
               </li>
               <li>
-                <a href="">Beli Galon</a>
+                <a href="/">Beli Galon</a>
               </li>
             </nav>
           </div>
@@ -49,13 +49,13 @@ export default function Footer() {
             <h2 className="title-font font-semibold text-2xl mb-5">BANTUAN</h2>
             <nav className="list-none list-footer space-y-5">
               <li>
-                <a href="">Pengiriman</a>
+                <a href="/home">Pengiriman</a>
               </li>
               <li>
-                <a href="">FAQ</a>
+                <a href="/home">FAQ</a>
               </li>
               <li>
-                <a href="">Kontak Kami</a>
+                <a href="/home">Kontak Kami</a>
               </li>
             </nav>
           </div>
@@ -71,23 +71,21 @@ export default function Footer() {
             </nav>
           </div>
 
-          <div className="">
-            <h2 className="title-font font-semibold text-2xl mb-5">
-              TETAP TERUPDATE
-            </h2>
-            <nav className="list-none list-footer space-y-5">
-              <p>
-                Jadilah yang pertama tahu tentang penawaran khusus dan produk
-                terbaru
-              </p>
-              <input
-                type="text"
-                placeholder="Alamat Email"
-                className="w-full h-14 rounded-md bg-gray-300 outline focus:outline-none"
-              />
-              <button className="bg-black text-white w-1/2 h-14">Daftar</button>
-            </nav>
-          </div>
+          <h2 className="title-font font-semibold text-2xl mb-5">
+            TETAP TERUPDATE
+          </h2>
+          <nav className="list-none list-footer space-y-5">
+            <p>
+              Jadilah yang pertama tahu tentang penawaran khusus dan produk
+              terbaru
+            </p>
+            <input
+              type="text"
+              placeholder="Alamat Email"
+              className="w-full h-14 rounded-md bg-gray-300 outline focus:outline-none"
+            />
+            <button className="bg-black text-white w-1/2 h-14">Daftar</button>
+          </nav>
         </div>
       </div>
 
