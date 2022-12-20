@@ -33,7 +33,10 @@ export default function Brands() {
     <div className="w-full mx-auto flex justify-around  bg-[#EEEE] items-center ">
       {data.map((item) => {
         return (
-          <div className="max-md:w-12 max-md:h-12 max-md:flex max-md:items-center">
+          <div
+            key={item.id}
+            className="max-md:w-12 max-md:h-12 max-md:flex max-md:items-center"
+          >
             <img src={item.img} alt="gambar" />
           </div>
         );
