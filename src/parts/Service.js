@@ -6,7 +6,7 @@ export default function Service() {
       id: 1,
       image: "/galon1.png",
       title: "Beli Galon",
-      location: "/home",
+      location: "/",
       buttonName: "Beli Galon",
     },
     {

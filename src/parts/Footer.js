@@ -49,13 +49,13 @@ export default function Footer() {
             <h2 className="title-font font-semibold text-2xl mb-5">BANTUAN</h2>
             <nav className="list-none list-footer space-y-5">
               <li>
-                <a href="/home">Pengiriman</a>
+                <a href="/">Pengiriman</a>
               </li>
               <li>
-                <a href="/home">FAQ</a>
+                <a href="/">FAQ</a>
               </li>
               <li>
-                <a href="/home">Kontak Kami</a>
+                <a href="/">Kontak Kami</a>
               </li>
             </nav>
           </div>

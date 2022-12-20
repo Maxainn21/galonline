@@ -79,7 +79,7 @@ function Dropdown() {
                   }}
                   className="flex items-center justify-between hover:bg-gray-100 rounded text-gray-600 hover:text-gray-800 p-3 hover:font-bold hover:cursor-default"
                 >
-                  <a href={"/home"} className="cursor-default">
+                  <a href={"/"} className="cursor-default">
                     <p className="text-sm leading-none">New Project</p>
                   </a>
 
